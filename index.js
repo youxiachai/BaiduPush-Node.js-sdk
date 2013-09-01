@@ -1,2 +1,2 @@
 
-module.exports = require('./lib/baiduPush');
+module.exports = require('./lib/baiduPush.js');
