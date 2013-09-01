@@ -1,6 +1,10 @@
 BaiduPush Node.js sdk
 ======================
 百度云推送 Node.js 服务端 sdk
+
+基本api 除 ios 证书尚未实现,其他全部实现.
+
+高级api 已经全部实现
 ## Usage
 
 ```
