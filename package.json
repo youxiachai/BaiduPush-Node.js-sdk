@@ -1,6 +1,6 @@
 {
   "name": "baidupush",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "baidu cloud push",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,17 @@
   },
   "devDependencies": {
     "mocha": "~1.12.1"
+  },
+  "homepage": "https://github.com/youxiachai/BaiduPush-Node.js-sdk",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:youxiachai/BaiduPush-Node.js-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/youxiachai/BaiduPush-Node.js-sdk/issues"
+  },
+  "directories": {
+    "doc": "doc",
+    "test": "test"
   }
 }
