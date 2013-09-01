@@ -43,7 +43,7 @@ var BaiduPush = require('../index');
 
 describe('#', function () {
   it('should query bind list', function (done) {
-    var push = BaiduPush.build({apiKey: 'VvTeGxhEbyPCGwCkP7qzGtw7', secretKey: 'oCt77INHfOHAzZLoyYbj7xtXm7muiogj'});
+    var push = BaiduPush.buildBaseApi({apiKey: 'VvTeGxhEbyPCGwCkP7qzGtw7', secretKey: 'oCt77INHfOHAzZLoyYbj7xtXm7muiogj'});
 
     var queryBody = {}
     push.queryBindlist(queryBody, function (err, body) {

@@ -14,14 +14,14 @@ var URI = require('URIjs');
 
 describe('#', function () {
   it('should query bind list', function (done) {
-    var push = BaiduPush.build({apiKey: 'VvTeGxhEbyPCGwCkP7qzGtw7', secretKey: 'oCt77INHfOHAzZLoyYbj7xtXm7muiogj'});
+    var push = BaiduPush.buildBaseApi({apiKey: 'VvTeGxhEbyPCGwCkP7qzGtw7', secretKey: 'oCt77INHfOHAzZLoyYbj7xtXm7muiogj'});
 
     var queryBody = {}
     queryBody.push_type = 3;
-    //queryBody.messages = {title: "hello", description: "hello world"};
-    queryBody.messages = 'xxx';
-    queryBody.msg_keys = 'testsdxxx';
-    queryBody.message_type = 0;
+    queryBody.messages = {title: "hello", description: "hello world from push msg"};
+//    queryBody.messages = 'xxx';
+    queryBody.msg_keys = 'tessdftsdxxx';
+    queryBody.message_type = 1;
 
     push.pushMsg(queryBody, function (err, body) {
       if (err) {
