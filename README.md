@@ -21,14 +21,7 @@ var baiduPushClient = BaiduPush.buildBaseApi({apiKey: 'your app key', secretKey:
     queryBody.message_type = 1;
 
     baiduPushClient.pushMsg(queryBody, function (err, body) {
-      if (err) {
-        if (typeof err !== 'String') {
-          err = JSON.stringify(err);
-        }
-        return done(err);
-      }
       console.log(body);
-      done();
     })
 ```
 
