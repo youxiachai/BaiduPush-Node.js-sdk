@@ -31,7 +31,7 @@ var baiduPushClient = BaiduPush.buildBaseApi({apiKey: 'your app key', secretKey:
 
 ## Api Docs
 
-Comming soon;
+[在线API文档](http://blog.gfdsa.net/BaiduPush-Node.js-sdk/api.html)
 
 ## 支持本项目
 如果你觉得这个项目还不错,就请作者喝杯咖啡吧
