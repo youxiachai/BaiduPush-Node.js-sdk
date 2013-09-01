@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>baidupush Documentation</title>
+    <meta name="keywords" content="baidupush" />
+    <meta name="description" content="baidu cloud push" />
+    <script src="assets/prettify.js"></script>
+    <script src="assets/jquery-1.8.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/base.css" />
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="./index.html">baidupush</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+            
+              <li>
+                <a href="./api.html">API Docs</a>
+              </li>
+            
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="jumbotron subhead">
+      <div class="container">
+        <h1>baidupush <small>Version: 0.0.1 By @youxiachai</small></h1>
+        <p class="lead">
+          baidu cloud push
+        </p>
+      </div>
+    </header>
+<div class="container content">
+  <div class="row">
+    <div class="span3 bs-docs-sidebar">
+      <ul class="nav nav-list bs-docs-sidenav affix">
+
+  <li>
+    <a href="#api_ApiConfig"><i class="icon-chevron-right"></i>ApiConfig</a>
+  </li>
+
+  <li>
+    <a href="#api_baiduPush"><i class="icon-chevron-right"></i>baiduPush</a>
+  </li>
+
+  <li>
+    <a href="#api_BaiduPushAdvancedApi"><i class="icon-chevron-right"></i>BaiduPushAdvancedApi</a>
+  </li>
+
+  <li>
+    <a href="#api_BaiduPushBaseApi"><i class="icon-chevron-right"></i>BaiduPushBaseApi</a>
+  </li>
+
+</ul>
+
+    </div>
+    <div class="span9">
+      
+        <section id="api_ApiConfig" class="api">
+  <h2>ApiConfig: API索引</h2>
+  <ul class="indexs">
+  
+  </ul>
+  <hr />
+
+</section>
+      
+        <section id="api_baiduPush" class="api">
+  <h2>baiduPush: API索引</h2>
+  <ul class="indexs">
+  
+    <li>
+      <a href="#_buildBaseApi">buildBaseApi</a>
+    </li>
+
+    <li>
+      <a href="#_buildAdvancedApi">buildAdvancedApi</a>
+    </li>
+
+  </ul>
+  <hr />
+
+  
+  <h3 id="_buildBaseApi">
+    buildBaseApi
+  </h3>
+  
+
+  <p>创建百度云推送基本api调用实例</p>
+
+  <table class="table table-striped table-bordered table-hover table-condensed">
+  
+    <tr>
+      <td>函数</td>
+      <td>buildBaseApi()</td> 
+      <td></td>
+      <td>buildBaseApi</td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>options(Object)</td>
+      <td colspan="2">{apiKey: 'your app key', secretKey: 'your secret key'}</td>
+    </tr>
+  
+
+    <tr>
+      <td>返回</td>
+      <td>BaiduPushBaseApi</td>
+      <td colspan="2">BaiduPushBaseApi</td>
+    </tr>
+  
+
+  
+  </table>
+  
+  
+  <h3 id="_buildAdvancedApi">
+    buildAdvancedApi
+  </h3>
+  
+
+  <p>创建百度云推送高级api调用实例</p>
+
+  <table class="table table-striped table-bordered table-hover table-condensed">
+  
+    <tr>
+      <td>函数</td>
+      <td>buildAdvancedApi()</td> 
+      <td></td>
+      <td>buildAdvancedApi</td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>options(Object)</td>
+      <td colspan="2">{apiKey: 'your app key', secretKey: 'your secret key'}</td>
+    </tr>
+  
+
+    <tr>
+      <td>返回</td>
+      <td>BaiduPushAdvancedApi</td>
+      <td colspan="2">BaiduPushAdvancedApi</td>
+    </tr>
+  
+
+  
+  </table>
+  
+</section>
+      
+        <section id="api_BaiduPushAdvancedApi" class="api">
+  <h2>BaiduPushAdvancedApi: API索引</h2>
+  <ul class="indexs">
+  
+    <li>
+      <a href="#_verifyBind">verifyBind</a>
+    </li>
+
+    <li>
+      <a href="#_fetchMsg">fetchMsg</a>
+    </li>
+
+    <li>
+      <a href="#_fetchMsgCount">fetchMsgCount</a>
+    </li>
+
+    <li>
+      <a href="#_deleteMsg">deleteMsg</a>
+    </li>
+
+    <li>
+      <a href="#_setTag">setTag</a>
+    </li>
+
+    <li>
+      <a href="#_fetchTag">fetchTag</a>
+    </li>
+
+    <li>
+      <a href="#_deleteTag">deleteTag</a>
+    </li>
+
+    <li>
+      <a href="#_queryUserTags">queryUserTags</a>
+    </li>
+
+    <li>
+      <a href="#_queryDeviceType">queryDeviceType</a>
+    </li>
+
+  </ul>
+  <hr />
+
+  
+  <h3 id="_verifyBind">
+    verifyBind
+  </h3>
+  
+
+  <p>对象参数与官方文档一致<br /><a href='http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#verify_bind'>http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#verify_bind</a></p>
+
+  <table class="table table-striped table-bordered table-hover table-condensed">
+  
+    <tr>
+      <td>函数</td>
+      <td>verifyBind()</td> 
+      <td></td>
+      <td>verifyBind</td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>reqBody(Object)</td>
+      <td colspan="2"></td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>callback(Function)</td>
+      <td colspan="2">function(err, body) {}</td>
+    </tr>
+  
+
+  
+  </table>
+  
+  
+  <h3 id="_fetchMsg">
+    fetchMsg
+  </h3>
+  
+
+  <p>对象参数与官方文档一致<br /><a href='http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#fetch_msg'>http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#fetch_msg</a></p>
+
+  <table class="table table-striped table-bordered table-hover table-condensed">
+  
+    <tr>
+      <td>函数</td>
+      <td>fetchMsg()</td> 
+      <td></td>
+      <td>fetchMsg</td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>reqBody(Object)</td>
+      <td colspan="2"></td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>callback(Function)</td>
+      <td colspan="2">function(err, body) {}</td>
+    </tr>
+  
+
+  
+  </table>
+  
+  
+  <h3 id="_fetchMsgCount">
+    fetchMsgCount
+  </h3>
+  
+
+  <p>对象参数与官方文档一致<br /><a href='http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#fetch_msgcount'>http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#fetch_msgcount</a></p>
+
+  <table class="table table-striped table-bordered table-hover table-condensed">
+  
+    <tr>
+      <td>函数</td>
+      <td>fetchMsgCount()</td> 
+      <td></td>
+      <td>fetchMsgCount</td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>reqBody(Object)</td>
+      <td colspan="2"></td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>callback(Function)</td>
+      <td colspan="2">function(err, body) {}</td>
+    </tr>
+  
+
+  
+  </table>
+  
+  
+  <h3 id="_deleteMsg">
+    deleteMsg
+  </h3>
+  
+
+  <p>对象参数与官方文档一致<br /><a href='http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#delete_msg'>http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#delete_msg</a></p>
+
+  <table class="table table-striped table-bordered table-hover table-condensed">
+  
+    <tr>
+      <td>函数</td>
+      <td>deleteMsg()</td> 
+      <td></td>
+      <td>deleteMsg</td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>reqBody(Object)</td>
+      <td colspan="2"></td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>callback(Function)</td>
+      <td colspan="2">function(err, body) {}</td>
+    </tr>
+  
+
+  
+  </table>
+  
+  
+  <h3 id="_setTag">
+    setTag
+  </h3>
+  
+
+  <p>对象参数与官方文档一致<br /><a href='http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#set_tag'>http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#set_tag</a></p>
+
+  <table class="table table-striped table-bordered table-hover table-condensed">
+  
+    <tr>
+      <td>函数</td>
+      <td>setTag()</td> 
+      <td></td>
+      <td>setTag</td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>reqBody(Object)</td>
+      <td colspan="2"></td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>callback(Function)</td>
+      <td colspan="2">function(err, body) {}</td>
+    </tr>
+  
+
+  
+  </table>
+  
+  
+  <h3 id="_fetchTag">
+    fetchTag
+  </h3>
+  
+
+  <p>对象参数与官方文档一致<br /><a href='http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#fetch_tag'>http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#fetch_tag</a></p>
+
+  <table class="table table-striped table-bordered table-hover table-condensed">
+  
+    <tr>
+      <td>函数</td>
+      <td>fetchTag()</td> 
+      <td></td>
+      <td>fetchTag</td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>reqBody(Object)</td>
+      <td colspan="2"></td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>callback(Function)</td>
+      <td colspan="2">function(err, body) {}</td>
+    </tr>
+  
+
+  
+  </table>
+  
+  
+  <h3 id="_deleteTag">
+    deleteTag
+  </h3>
+  
+
+  <p>对象参数与官方文档一致<br /><a href='http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#delete_tag'>http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#delete_tag</a></p>
+
+  <table class="table table-striped table-bordered table-hover table-condensed">
+  
+    <tr>
+      <td>函数</td>
+      <td>deleteTag()</td> 
+      <td></td>
+      <td>deleteTag</td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>reqBody(Object)</td>
+      <td colspan="2"></td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>callback(Function)</td>
+      <td colspan="2">function(err, body) {}</td>
+    </tr>
+  
+
+  
+  </table>
+  
+  
+  <h3 id="_queryUserTags">
+    queryUserTags
+  </h3>
+  
+
+  <p>对象参数与官方文档一致<br /><a href='http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#query_user_tags'>http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#query_user_tags</a></p>
+
+  <table class="table table-striped table-bordered table-hover table-condensed">
+  
+    <tr>
+      <td>函数</td>
+      <td>queryUserTags()</td> 
+      <td></td>
+      <td>queryUserTags</td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>reqBody(Object)</td>
+      <td colspan="2"></td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>callback(Function)</td>
+      <td colspan="2">function(err, body) {}</td>
+    </tr>
+  
+
+  
+  </table>
+  
+  
+  <h3 id="_queryDeviceType">
+    queryDeviceType
+  </h3>
+  
+
+  <p>对象参数与官方文档一致<br /><a href='http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#query_device_type'>http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#query_device_type</a></p>
+
+  <table class="table table-striped table-bordered table-hover table-condensed">
+  
+    <tr>
+      <td>函数</td>
+      <td>queryDeviceType()</td> 
+      <td></td>
+      <td>queryDeviceType</td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>reqBody(Object)</td>
+      <td colspan="2"></td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>callback(Function)</td>
+      <td colspan="2">function(err, body) {}</td>
+    </tr>
+  
+
+  
+  </table>
+  
+</section>
+      
+        <section id="api_BaiduPushBaseApi" class="api">
+  <h2>BaiduPushBaseApi: API索引</h2>
+  <ul class="indexs">
+  
+    <li>
+      <a href="#_queryBindlist">queryBindlist</a>
+    </li>
+
+    <li>
+      <a href="#_pushMsg">pushMsg</a>
+    </li>
+
+  </ul>
+  <hr />
+
+  
+  <h3 id="_queryBindlist">
+    queryBindlist
+  </h3>
+  
+
+  <p>对象参数与官方文档一致<br /><a href='http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#query_bindlist'>http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#query_bindlist</a></p>
+
+  <table class="table table-striped table-bordered table-hover table-condensed">
+  
+    <tr>
+      <td>函数</td>
+      <td>queryBindlist()</td> 
+      <td></td>
+      <td>queryBindlist</td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>queryBody(Object)</td>
+      <td colspan="2"></td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>callback(Function)</td>
+      <td colspan="2">function(err, body) {}</td>
+    </tr>
+  
+
+  
+  </table>
+  
+  
+  <h3 id="_pushMsg">
+    pushMsg
+  </h3>
+  
+
+  <p>对象参数与官方文档一致<br /><a href='http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#push_msg'>http://developer.baidu.com/wiki/index.php?title=docs/cplat/push/api/list#push_msg</a></p>
+
+  <table class="table table-striped table-bordered table-hover table-condensed">
+  
+    <tr>
+      <td>函数</td>
+      <td>pushMsg()</td> 
+      <td></td>
+      <td>pushMsg</td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>queryBody(Object)</td>
+      <td colspan="2"></td>
+    </tr>
+  
+
+    <tr>
+      <td>参数</td>
+      <td>callback(Function)</td>
+      <td colspan="2">function(err, body) {}</td>
+    </tr>
+  
+
+  
+  </table>
+  
+</section>
+      
+    </div>
+  </div>
+</div>
+      <footer class="footer">
+        <div class="container">
+          <p class="pull-right">
+            <a href="#">Back to top</a>
+          </p>
+         WeiBo: <a href='http://weibo.com/u/1312972820'>@游戏阿柴</a>
+      </div>
+    </footer>
+    <script>
+      $(function() {
+        $('pre').addClass('prettyprint');
+        $('td pre').removeClass('prettyprint');
+        prettyPrint();
+        var $window = $(window);
+        $('.bs-docs-sidenav').affix({
+          offset: {
+            top: function () {
+              return $window.width() <= 980 ? 290 : 210
+            },
+            bottom: 270
+          }
+        });
+        $(".content").find('h1, h2, h3, h4, h5, h6').each(function () {
+          var node = $(this);
+          if (!node.attr("id")) {
+            node.attr("id", "index_" + node.text());
+          }
+          node.css("paddingTop", 40);
+        });
+      });
+    </script>
+  
+  </body>
+</html>
