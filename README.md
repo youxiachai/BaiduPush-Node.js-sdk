@@ -1,4 +1,4 @@
-BaiduPush Node.js sdk  [![Build Status](https://travis-ci.org/youxiachai/BaiduPush-Node.js-sdk.png?branch=master)](https://travis-ci.org/youxiachai/BaiduPush-Node.js-sdk)
+BaiduPush Node.js sdk  [![Build Status](https://travis-ci.org/youxiachai/BaiduPush-Node.js-sdk.png?branch=master)](https://travis-ci.org/youxiachai/BaiduPush-Node.js-sdk) [![NPM version](https://badge.fury.io/js/baidupush.png)](http://badge.fury.io/js/baidupush) ![](https://david-dm.org/youxiachai/JPush-Node.js-sdk.png)
 ======================
 百度云推送 Node.js 服务端 sdk
 
